@@ -12,7 +12,7 @@ const outsideTemp = null
 
 const id = Symbol('123')
 const anotherId = Symbol('123')
-console.log(id === anotherId); // it is false because of symbol
+//console.log(id === anotherId); // it is false because of symbol
 
 // const bigNumber = 65456435746548768n //n in the last represent bigInt number
 
@@ -33,7 +33,29 @@ let myObj = {
 
 // function(){} it is function definition 
 const myFunction = function(){
-    console.log("Hello World");
+//    console.log("Hello World");
 }
     
-console.log(typeof outsideTemp);
+//console.log(typeof outsideTemp);
+
+//*************************
+// Stack(Primitive) - primitive type
+// Heap(Non-Primitive) -non-primitive
+
+let myYoutubename = "Prasanjeeet"
+let anothername = myYoutubename
+
+anothername = "chaiaurcode"
+console.log(anothername);
+console.log(myYoutubename);
+
+let userOne = {
+    email: "pj@google.com"
+}
+
+let userTwo = userOne
+
+userTwo.email = "Prasan@google.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
